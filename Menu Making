@@ -1,0 +1,64 @@
+
+
+
+
+food_items=("please select the food item\nB= Burger\nF= French Fries\nP= Pizza\nS= Sandwiches \n")
+# food_items=['B= Burger', 'F= French Fries','P= Pizza','S= Sandwiches']
+print("please select the food item\nB= Burger\nF= French Fries\nP= Pizza\nS= Sandwiches \n")
+
+#Prices
+
+Burger=int(200)
+French_Fries=int(50)
+Pizza=int(500)
+Sandwiches=int(150)
+
+
+#Burger
+for food_items in food_items:
+   if food_items == food_items:
+       food_item = input('Enter food ')
+       print("Burger Price is 200")
+       quantity = eval(input('Enter Quantity'))
+       price_of_burger = quantity * Burger
+       print(price_of_burger)
+
+   break
+
+# French_Fries
+for food_items in food_items:
+  food_item=input("Enter 2nd Item")
+  if food_items == food_items:
+       print("French_Fries Price is 50")
+       quantity = eval(input('Enter Quantity'))
+       price_of_French_Fries = quantity * French_Fries
+       print(price_of_French_Fries)
+  break
+
+# Pizza Section
+for food_items in food_items:
+  food_item=input("Enter 3rd Item")
+  if food_items == food_items:
+       print("Pizza Price is 500")
+       quantity = eval(input('Enter Quantity'))
+       price_of_Pizza = quantity *Pizza
+       print(price_of_Pizza)
+  break
+
+# Sandwiches
+for food_items in food_items:
+  food_item=input("Enter 4th Item")
+  if food_items == food_items:
+       print("Sandwiches Price is 150")
+       quantity = eval(input('Enter Quantity'))
+       price_of_Sandwiches = quantity *Sandwiches
+       print(price_of_Sandwiches)
+  break
+
+# Bill
+sum = price_of_burger + price_of_French_Fries +price_of_Pizza+price_of_Sandwiches
+print('Bill',sum)
+
+choice = int(input("Do you want to Continue Shopping , Enter Key 1 "))
+if choice == 1:
+   print("Enter more items")
